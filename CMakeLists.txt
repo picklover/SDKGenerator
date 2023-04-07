@@ -1,7 +1,7 @@
 project(ue4genny)
 set(UE4_SOURCE_DIR "${CMAKE_SOURCE_DIR}/Source" CACHE PATH "Where the UE4 source is located")
 set(SDK_OUTPUT_DIR "${CMAKE_SOURCE_DIR}/sdk" CACHE PATH "Where the generated SDK files will go")
-set(CONFIG_HPP "DRGConfig.hpp" CACHE STRING "The config header file to use")
+set(CONFIG_HPP "ShooterGameConfig.hpp" CACHE STRING "The config header file to use")
 set(SDK_ADDITIONAL_INCLUDE_HPP "" CACHE STRING "An optional additional header to include in every generated file")
 set(SDK_UOBJECT_STRING_LOOKUP OFF CACHE BOOL "Whether to perform StaticClass lookups with strings instead of hashes")
 add_library(ue4genny SHARED 
@@ -14,7 +14,7 @@ add_library(ue4genny SHARED
     "src/kanan/core/Utility.cpp"
     "src/UE4Genny.cpp"
     "src/UE4Impl.cpp"
-    "src/DRGConfig.hpp"
+    "src/ShooterGameConfig.hpp"
 )
 target_include_directories(ue4genny PUBLIC 
     "src"

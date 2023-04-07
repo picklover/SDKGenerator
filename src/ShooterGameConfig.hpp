@@ -1,0 +1,4 @@
+#pragma once
+constexpr char* GUOBJECTARRAY_PAT = "48 8B 05 ? ? ? ? 48 8B 0C C8 48 8D 1C D1 EB 03";
+constexpr char* FNAME_TOSTRING_PAT = "48 89 5C 24 10 48 89 6c 24 18 48 89 74 24 20 57 48 83 EC 20 8B 01 48 8B DA 8B F8 44 0F B7 C0";
+constexpr int UOBJECT_PROCESSEVENT_INDEX = 68;//may 67 or 69

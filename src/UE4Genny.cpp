@@ -31,7 +31,7 @@ FUObjectArray* get_GUObjectArray() {
             return nullptr;
         }
 
-        obj_array = (FUObjectArray*)kanan::rel_to_abs(*lea + 3);
+        obj_array = (FUObjectArray*)kanan::rel_to_abs(*lea + 3, -0xc);
 
         OutputDebugString(L"Found GUObjectArray!");
     }
